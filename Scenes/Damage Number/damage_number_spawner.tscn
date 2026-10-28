@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c4ywtk72crlpr"]
 
-[ext_resource type="Script" uid="uid://bssgy0af4v7mu" path="res://Scripts/survivors/damage_number_spawner.gd" id="1_nf7o1"]
+[ext_resource type="Script" uid="uid://bssgy0af4v7mu" path="res://Scripts/damage_number_spawner.gd" id="1_nf7o1"]
 
 [node name="Damage Number Spawner" type="Node2D" unique_id=1668166854]
 script = ExtResource("1_nf7o1")

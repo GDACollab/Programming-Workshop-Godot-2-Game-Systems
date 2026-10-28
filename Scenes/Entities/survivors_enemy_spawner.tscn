@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dextitj58fo3x"]
 
-[ext_resource type="Script" uid="uid://dgwwg8i2eiom" path="res://Scripts/survivors/suvivors_enemy_spawner.gd" id="1_17ukx"]
+[ext_resource type="Script" uid="uid://dgwwg8i2eiom" path="res://Scripts/suvivors_enemy_spawner.gd" id="1_17ukx"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p3j2b"]
 size = Vector2(1920, 1080)

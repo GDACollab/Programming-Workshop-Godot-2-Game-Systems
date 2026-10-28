@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://dolh33a6x4q4u"]
 
-[ext_resource type="Script" uid="uid://dmgs8ocrujjb7" path="res://Scripts/survivors/survivors_player.gd" id="1_csh8b"]
+[ext_resource type="Script" uid="uid://dmgs8ocrujjb7" path="res://Scripts/survivors_player.gd" id="1_csh8b"]
 [ext_resource type="Texture2D" uid="uid://pbi7t65mv06a" path="res://icon.svg" id="2_ug8xi"]
 [ext_resource type="PackedScene" uid="uid://bucloalflipie" path="res://Scenes/Player Reticle/reticle_line.tscn" id="3_ug8xi"]
+
 
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sm0rs"]
