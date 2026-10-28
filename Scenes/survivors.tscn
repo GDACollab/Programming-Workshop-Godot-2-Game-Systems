@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bcmth4j8xr3l2"]
 
-[ext_resource type="PackedScene" uid="uid://dolh33a6x4q4u" path="res://Scenes/Helper Scenes (Don't Edit)/Entities/survivors_player.tscn" id="1_msi0f"]
-[ext_resource type="PackedScene" uid="uid://dextitj58fo3x" path="res://Scenes/Helper Scenes (Don't Edit)/Entities/survivors_enemy_spawner.tscn" id="2_j5p33"]
-[ext_resource type="PackedScene" uid="uid://dd76eovxe20p6" path="res://Scenes/Helper Scenes (Don't Edit)/Entities/survivors_enemy.tscn" id="3_jl87c"]
+[ext_resource type="PackedScene" uid="uid://dolh33a6x4q4u" path="res://Scenes/Helper Scenes/Entities/survivors_player.tscn" id="1_msi0f"]
+[ext_resource type="PackedScene" uid="uid://dextitj58fo3x" path="res://Scenes/Helper Scenes/Entities/survivors_enemy_spawner.tscn" id="2_j5p33"]
+[ext_resource type="PackedScene" uid="uid://dd76eovxe20p6" path="res://Scenes/Helper Scenes/Entities/survivors_enemy.tscn" id="3_jl87c"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_l16ms"]
 

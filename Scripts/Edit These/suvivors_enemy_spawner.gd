@@ -42,5 +42,5 @@ func decrement_enemy_count() -> void:
 	_enemy_count -= 1
 	print("enemy count: ", str(_enemy_count))
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
