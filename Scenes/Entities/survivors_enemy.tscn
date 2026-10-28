@@ -2,7 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://pbi7t65mv06a" path="res://icon.svg" id="1_ij7pq"]
 [ext_resource type="Script" uid="uid://dpq7riu4hd5f0" path="res://Scripts/survivors/survivors_enemy.gd" id="1_xjqdg"]
-[ext_resource type="PackedScene" uid="uid://c4ywtk72crlpr" path="res://Scenes/suvivors/damage_number_spawner.tscn" id="3_xjqdg"]
+[ext_resource type="PackedScene" uid="uid://c4ywtk72crlpr" path="res://Scenes/Damage Number/damage_number_spawner.tscn" id="3_xjqdg"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j5p33"]
 size = Vector2(60, 60)
