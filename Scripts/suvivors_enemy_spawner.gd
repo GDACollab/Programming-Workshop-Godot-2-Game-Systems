@@ -5,8 +5,8 @@ class_name SurvivorsEntitySpawner extends Node
 @export var on_screen_enemy_limit: int = 10
 var _enemy_count: int = 0
 func spawn_entity() -> void:
-	if (_enemy_count > on_screen_enemy_limit):
-		pass
+	if (_enemy_count >= on_screen_enemy_limit):
+		return
 	
 	var spawn_point := get_spawn_point()
 	var random_enemy_type_index = randi_range(0, enemy_types.size() - 1)
