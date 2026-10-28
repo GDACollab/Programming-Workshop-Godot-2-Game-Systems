@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Programming Workshop Test Project"
+config/name="Programming Workshop Godot 2"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
