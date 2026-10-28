@@ -14,6 +14,10 @@ config/name="Programming Workshop Godot 2"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameManager="*uid://cy5vgm6qhq1dr"
+
 [display]
 
 window/size/viewport_width=1920

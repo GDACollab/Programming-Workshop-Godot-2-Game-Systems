@@ -6,7 +6,7 @@ var current_health: float
 
 # ---REPLACE---
 # Add a custom signal for getting hurt!
-
+signal on_hurt(float)
 signal on_death
 
 func on_spawn() -> void:
@@ -17,7 +17,7 @@ func take_damage(amount: float) -> void:
 	current_health -= amount
 	# ---REPLACE---
 	# Emit a custom signal here for getting hurt!
-	
+	on_hurt.emit(amount)
 	if current_health <= 0:
 		die()
 

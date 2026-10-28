@@ -4,9 +4,10 @@ class_name SurvivorsEntitySpawner extends Node
 @export var spawn_rect: CollisionShape2D = null
 @export var on_screen_enemy_limit: int = 10
 var _enemy_count: int = 0
+
 func spawn_entity() -> void:
-	if (_enemy_count > on_screen_enemy_limit):
-		pass
+	if (_enemy_count >= on_screen_enemy_limit):
+		return
 	
 	var spawn_point := get_spawn_point()
 	var random_enemy_type_index = randi_range(0, enemy_types.size() - 1)
@@ -31,8 +32,7 @@ func get_spawn_point() -> Vector2:
 func _ready() -> void:
 	# ---REPLACE---
 	# Use a Timer to repeatedly spawn new enemies!
-	
-	spawn_entity() # <--- replace this
+	pass
 
 func increment_enemy_count() -> void:
 	_enemy_count += 1
@@ -44,3 +44,6 @@ func decrement_enemy_count() -> void:
 
 func _process(delta: float) -> void:
 	pass
+
+func _on_timer_timeout() -> void:
+	spawn_entity()
