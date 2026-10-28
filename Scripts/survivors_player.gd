@@ -11,7 +11,7 @@ func get_move_direction() -> Vector2:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if (event.is_action_pressed("shoot")):
-		#---REPLACE---
-		# Use the raycast to shoot towards a collider!
+		## TODO:
+		## Use the raycast to shoot towards a collider!
 		
 		pass

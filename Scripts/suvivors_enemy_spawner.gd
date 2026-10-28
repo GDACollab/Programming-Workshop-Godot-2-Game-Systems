@@ -29,8 +29,8 @@ func get_spawn_point() -> Vector2:
 	return spawn_point
 
 func _ready() -> void:
-	# ---REPLACE---
-	# Use a Timer to repeatedly spawn new enemies!
+	## TODO:
+	## Use a Timer to repeatedly spawn new enemies!
 	
 	spawn_entity() # <--- replace this
 

@@ -4,8 +4,8 @@ class_name SurvivorsEntity extends CharacterBody2D
 @export var damage: float = 1.0
 var current_health: float
 
-# ---REPLACE---
-# Add a custom signal for getting hurt!
+## TODO:
+## Add a custom signal for getting hurt!
 
 signal on_death
 
@@ -15,8 +15,8 @@ func on_spawn() -> void:
 
 func take_damage(amount: float) -> void:
 	current_health -= amount
-	# ---REPLACE---
-	# Emit a custom signal here for getting hurt!
+	## TODO:
+	## Emit a custom signal here for getting hurt!
 	
 	if current_health <= 0:
 		die()
