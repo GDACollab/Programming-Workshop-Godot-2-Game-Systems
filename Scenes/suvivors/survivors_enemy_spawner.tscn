@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dextitj58fo3x"]
+
+[ext_resource type="Script" uid="uid://dgwwg8i2eiom" path="res://Scripts/survivors/suvivors_enemy_spawner.gd" id="1_17ukx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3j2b"]
+size = Vector2(1920, 1080)
+
+[node name="Survivors Enemy Spawner" type="Node2D" unique_id=2074361075 node_paths=PackedStringArray("spawn_rect")]
+script = ExtResource("1_17ukx")
+spawn_rect = NodePath("CollisionShape2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=487957516]
+shape = SubResource("RectangleShape2D_p3j2b")
+debug_color = Color(0, 0.6, 0.69803923, 0.06666667)

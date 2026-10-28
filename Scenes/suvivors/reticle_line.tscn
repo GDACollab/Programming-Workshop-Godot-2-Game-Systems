@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bucloalflipie"]
+
+[ext_resource type="Script" uid="uid://bw58n6mqokqni" path="res://Scripts/survivors/reticle_line.gd" id="1_4a8ad"]
+
+[node name="ReticleLine" type="Node2D" unique_id=2062099628 node_paths=PackedStringArray("line", "raycast")]
+script = ExtResource("1_4a8ad")
+line = NodePath("Line2D")
+raycast = NodePath("RayCast2D")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1103612691]
+width = 7.5
+default_color = Color(0.29330257, 0.6944844, 0.99999994, 0.78431374)
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=471983681]
+collision_mask = 4

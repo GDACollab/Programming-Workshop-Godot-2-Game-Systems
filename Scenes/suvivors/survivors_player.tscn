@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dolh33a6x4q4u"]
+
+[ext_resource type="Script" uid="uid://dmgs8ocrujjb7" path="res://Scripts/survivors/survivors_player.gd" id="1_csh8b"]
+[ext_resource type="Texture2D" uid="uid://pbi7t65mv06a" path="res://icon.svg" id="2_ug8xi"]
+[ext_resource type="PackedScene" uid="uid://bucloalflipie" path="res://Scenes/suvivors/reticle_line.tscn" id="3_ug8xi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sm0rs"]
+radius = 30.0
+
+[node name="Player" type="CharacterBody2D" unique_id=463967796 node_paths=PackedStringArray("reticle_line")]
+script = ExtResource("1_csh8b")
+reticle_line = NodePath("ReticleLine")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1851411207]
+shape = SubResource("CircleShape2D_sm0rs")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=569586766]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_ug8xi")
+
+[node name="ReticleLine" parent="." unique_id=2062099628 instance=ExtResource("3_ug8xi")]

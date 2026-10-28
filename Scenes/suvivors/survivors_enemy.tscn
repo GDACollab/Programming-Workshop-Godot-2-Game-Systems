@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dd76eovxe20p6"]
+
+[ext_resource type="Texture2D" uid="uid://pbi7t65mv06a" path="res://icon.svg" id="1_ij7pq"]
+[ext_resource type="Script" uid="uid://dpq7riu4hd5f0" path="res://Scripts/survivors/survivors_enemy.gd" id="1_xjqdg"]
+[ext_resource type="PackedScene" uid="uid://c4ywtk72crlpr" path="res://Scenes/suvivors/damage_number_spawner.tscn" id="3_xjqdg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j5p33"]
+size = Vector2(60, 60)
+
+[node name="SurvivorsEnemy" type="CharacterBody2D" unique_id=2015223636]
+collision_layer = 5
+script = ExtResource("1_xjqdg")
+move_speed = 100.0
+
+[node name="SurvivorsHurtbox" type="CollisionShape2D" parent="." unique_id=842583744]
+shape = SubResource("RectangleShape2D_j5p33")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=611832980]
+modulate = Color(1, 0.5411765, 0.58431375, 1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ij7pq")
+
+[node name="Damage Number Spawner" parent="." unique_id=1668166854 node_paths=PackedStringArray("entity") instance=ExtResource("3_xjqdg")]
+entity = NodePath("..")

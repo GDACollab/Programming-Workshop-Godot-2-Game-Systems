@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://bcmth4j8xr3l2"]
+
+[ext_resource type="PackedScene" uid="uid://dolh33a6x4q4u" path="res://Scenes/suvivors/survivors_player.tscn" id="1_msi0f"]
+[ext_resource type="PackedScene" uid="uid://dextitj58fo3x" path="res://Scenes/suvivors/survivors_enemy_spawner.tscn" id="2_j5p33"]
+[ext_resource type="PackedScene" uid="uid://dd76eovxe20p6" path="res://Scenes/suvivors/survivors_enemy.tscn" id="3_jl87c"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_l16ms"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l16ms"]
+size = Vector2(1920, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ylngn"]
+size = Vector2(20, 1080)
+
+[node name="Survivors" type="Node2D" unique_id=215688946]
+
+[node name="Environment" type="Node2D" parent="." unique_id=931840306]
+
+[node name="Background" type="Node2D" parent="Environment" unique_id=1641472004]
+position = Vector2(960, 540)
+
+[node name="Sprite2D" type="Sprite2D" parent="Environment/Background" unique_id=657210093]
+modulate = Color(0.45237577, 0.47013408, 0.30587932, 1)
+scale = Vector2(1920, 1080)
+texture = SubResource("CanvasTexture_l16ms")
+
+[node name="Bounds" type="Node2D" parent="Environment" unique_id=2082923640]
+
+[node name="Top" type="StaticBody2D" parent="Environment/Bounds" unique_id=790812235]
+position = Vector2(960, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Bounds/Top" unique_id=1274250654]
+shape = SubResource("RectangleShape2D_l16ms")
+
+[node name="Bottom" type="StaticBody2D" parent="Environment/Bounds" unique_id=1980583196]
+position = Vector2(960, 1080)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Bounds/Bottom" unique_id=966883758]
+shape = SubResource("RectangleShape2D_l16ms")
+
+[node name="Left" type="StaticBody2D" parent="Environment/Bounds" unique_id=678728764]
+position = Vector2(0, 540)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Bounds/Left" unique_id=11414780]
+shape = SubResource("RectangleShape2D_ylngn")
+
+[node name="Right" type="StaticBody2D" parent="Environment/Bounds" unique_id=1585063095]
+position = Vector2(1920, 540)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Environment/Bounds/Right" unique_id=399461088]
+shape = SubResource("RectangleShape2D_ylngn")
+
+[node name="SurvivorsPlayer" parent="." unique_id=463967796 instance=ExtResource("1_msi0f")]
+position = Vector2(960, 540)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=532811819]
+position = Vector2(960, 540)
+
+[node name="Survivors Enemy Spawner" parent="." unique_id=2074361075 instance=ExtResource("2_j5p33")]
+position = Vector2(960, 540)
+enemy_types = Array[PackedScene]([ExtResource("3_jl87c")])
