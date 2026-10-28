@@ -25,7 +25,7 @@ func die() -> void:
 	on_death.emit()
 	queue_free()
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	var move_direction := get_move_direction()
 	
 	if move_direction.x != 0:
