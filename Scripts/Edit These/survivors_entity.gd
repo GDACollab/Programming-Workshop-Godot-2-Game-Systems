@@ -11,7 +11,6 @@ signal on_death
 
 func on_spawn() -> void:
 	current_health = max_health
-	pass
 
 func take_damage(amount: float) -> void:
 	current_health -= amount
