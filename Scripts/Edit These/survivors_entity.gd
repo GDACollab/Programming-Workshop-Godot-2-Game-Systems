@@ -12,6 +12,9 @@ signal on_death
 func on_spawn() -> void:
 	current_health = max_health
 
+## TODO:
+## Add a function that sets an entities stats using a Resource!
+
 func take_damage(amount: float) -> void:
 	current_health -= amount
 	## TODO:
