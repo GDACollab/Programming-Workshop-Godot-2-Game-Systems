@@ -1,12 +1,16 @@
 [gd_scene format=3 uid="uid://dextitj58fo3x"]
 
 [ext_resource type="Script" uid="uid://dgwwg8i2eiom" path="res://Scripts/suvivors_enemy_spawner.gd" id="1_17ukx"]
+[ext_resource type="Script" uid="uid://dq4gj5r41f7uc" path="res://Scripts/enemy_stats_resource.gd" id="2_4r1ul"]
+[ext_resource type="Resource" uid="uid://dpq8k8l7v4cio" path="res://Resources/Enemy Types/normal_enemy.tres" id="3_1wcmb"]
+[ext_resource type="Resource" uid="uid://6rtkjxc08sxl" path="res://Resources/Enemy Types/baby_enemy.tres" id="4_s60y3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p3j2b"]
 size = Vector2(1920, 1080)
 
 [node name="Survivors Enemy Spawner" type="Node2D" unique_id=2074361075 node_paths=PackedStringArray("spawn_rect")]
 script = ExtResource("1_17ukx")
+enemy_types = Array[ExtResource("2_4r1ul")]([ExtResource("3_1wcmb"), ExtResource("4_s60y3")])
 spawn_rect = NodePath("CollisionShape2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=487957516]

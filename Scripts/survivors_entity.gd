@@ -13,6 +13,11 @@ func on_spawn() -> void:
 	current_health = max_health
 	pass
 
+func set_stats(stats_resource: EnemyStats) -> void:
+	max_health = stats_resource.max_health
+	move_speed = stats_resource.move_speed
+	damage = stats_resource.damage
+
 func take_damage(amount: float) -> void:
 	current_health -= amount
 	# ---REPLACE---
