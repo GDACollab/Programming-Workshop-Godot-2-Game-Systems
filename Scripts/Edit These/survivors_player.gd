@@ -2,6 +2,12 @@ class_name SurvivorsPlayer extends SurvivorsEntity
 
 @export var reticle_line: ReticleLine
 
+func _ready() -> void:
+	## TODO:
+	## Make a singleton with a "player" variable and set that to this class!
+	
+	pass
+
 func get_move_direction() -> Vector2:
 	var move_direction: Vector2
 	move_direction.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
